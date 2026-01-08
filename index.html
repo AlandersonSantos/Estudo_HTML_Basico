@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecimento sobre HTML</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="Voltar">Conhecimento sobre HTML</h1>
+
+    <hr/>
+
+    <ul>
+        <li><a href="#linguagem-de-programação">HTML é uma linguagem de programação?</a></li><br/>
+        <li><a href="#que-ele-faz">HTML o que ele faz?</a></li><br/>
+        <li><a href="#elementos-de-HTML">Quais são os elementos de HTML?</a></li><br/>
+        <li><a href="#Referências">Referências</a></li><br/>
+
+    </ul>
+
+    <h2 id="linguagem-de-programação">HTML é uma linguagem de programação?</h2>
+    <p><b>resposta curta é:</b>  O <abbr>HTML</abbr>(HyperText Markup Language) não possui lógica de controle.</p>
+
+    <h3>Motivos técnicos explicados de forma simples:</h3>
+
+        <ol>
+            <li>
+                <h4>Falta de Algoritmos (Lógica)</h4>
+                <p>
+                    Uma linguagem de programação (como <i>JavaScript, Python ou C#</i>)
+                    <strong>permite que você diga ao computador:</strong> <mark><i>"Se X for verdade, faça Y; se não, faça Z"</i></mark>. 
+                    No <abbr>HTML</abbr>(HyperText Markup Language), <u>você não consegue criar condições ou loops</u>.
+                </p>
+
+                <p><strong> Linguagem de Programação: </strong> Possui if, else, for, while.</p>
+
+                <p>
+                    <strong>HTML:</strong> Apenas declara o que existe. Você não consegue dizer ao HTML: <mark><i>"Se o usuário for admin,
+                     mostre este botão"</i></mark>. <u>Você precisa de uma linguagem de programação para decidir isso</u>.
+                </p>
+            </li>
+
+            <li>
+                <h4>É uma Linguagem de Marcação (Markup)</h4>
+                <p>
+                    O próprio nome diz: <mark>HyperText Markup Language</mark>. Linguagens de marcação servem para <b>estruturar e anotar conteúdo</b>.
+                    <u>É como se você estivesse pegando um texto e passando um marca-texto colorido dizendo:</u> <i>"Isso aqui é um título", "Isso aqui é um parágrafo", "Isso aqui é um link"</i>.
+                </p>
+
+            </li>
+
+            <li>
+                <h4>  Não realiza processamento de dados  </h4>
+                <p>
+                    O HTML <b>não consegue somar 2 + 2 e exibir o resultado</b>.
+                    <mark>Ele não consegue processar informações, manipular arquivos ou se conectar a um banco de dados sozinho</mark>.
+                    Ele é apenas o <b>"contêiner"</b> <u>onde os resultados dessas operações serão exibidos</u>.
+                </p>
+            </li>
+        </ol>
+
+
+    <h2 id="que-ele-faz">HTML o que ele faz?</h2>
+
+        <ol>
+            <li>
+                <h4>Ele define a Estrutura (Semântica)</h4>
+                <p><strong>O HTML diz ao navegador o que cada elemento é, e não como ele deve parecer.</strong> Sem ele, o navegador veria apenas um amontoado de texto sem nexo.<br/></p>
+
+                <p>
+                    <strong>Ele avisa:</strong> <i>"Isso aqui é o título principal"</i> (&lt; h1 &gt;).<br/>
+                    <strong>Ele avisa:</strong> <i>"Isso aqui é um parágrafo de texto"</i> (&lt; p &gt;).<br/>
+                    <strong>Ele avisa:</strong> <i>"Isso aqui é uma imagem que deve ser carregada"</i> (&lt; img &gt;).
+                </p>
+            </li>
+            <li>
+                <h4>Ele serve de "Gancho" para outras linguagens</h4>
+                <p>
+                    O HTML sozinho é <b>estático</b> (parado). Ele fornece os pontos de conexão para as outras tecnologias por exemplo:
+                </p>
+                <p>
+                    <b>Para o CSS:</b> O HTML dá <b>"nomes"</b> aos elementos (<b>usando id ou class</b>) <mark>para que o CSS saiba onde aplicar as cores e fontes</mark>.
+                </p>
+                <p>
+                    <b>Para o JavaScript:</b> O HTML cria os objetos (<b>botões, campos de entrada</b>) que o <mark>JavaScript vai monitorar para criar interatividade</mark>.
+                </p>
+            </li>
+        </ol>
+
+    <h2 id="elementos-de-HTML">Quais são os elementos de HTML?</h2>
+
+        <ol>
+            <li>
+                <h4>Elementos Estruturais (A base de tudo)</h4>
+                <p><strong>Estes elementos organizam a página, mas não são necessariamente "vistos" como texto pelo usuário.</strong> Eles criam a hierarquia do documento.</p>
+                <ul>
+                    <li><p><strong>&lt; html &gt;:</strong> <mark> O elemento raiz que envolve todo o código.</mark></p></li>
+                    <li><p><strong>&lt; head &gt;:</strong> <mark>Contém metadados (informações para o navegador e Google).</mark></p></li>
+                    <li><p><strong>&lt; body &gt;:</strong> <mark>Onde fica tudo o que é visível para o usuário.</mark></p></li>
+                </ul>
+            </li>
+            <li>
+                <h4>Elementos de Texto (O conteúdo)</h4>
+                <p><strong>São os mais utilizados para exibir as informações.</strong></p>
+
+                <ul>
+                    <li>
+                        <p><strong>&lt;h1&gt; a &lt;h6&gt;:</strong> <mark>Títulos e subtítulos (Hierarquia).</mark></p>
+                    </li>
+                    <li>
+                        <p><strong>&lt;p&gt;:</strong> <mark>Parágrafos de texto comum.</mark></p>
+                    </li>
+                    <li>
+                        <p><strong>&lt;strong&gt;:</strong> <mark>Para dar importância ou ênfase (negrito e itálico semântico).</mark></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>Elementos de Mídia e Links (Conectividade)</h4>
+                <p><strong>Esses elementos trazem "vida" e conexão para a página.</strong></p>
+
+                <ul>
+                    <li>
+                        <p><strong>&lt;a&gt;(Anchor):</strong> <mark>O elemento de link. Usa o atributo href para dizer para onde o usuário vai.</mark></p>
+                    </li>
+                    <li>
+                        <p><strong>&lt;img&gt;:</strong> <mark>Para exibir imagens. Diferente dos outros, ele é um elemento de autofechamento.</mark></p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    <h2 id="Referências">Referências</h2>
+
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML: Linguagem de marcação de hipertexto</a></li><br/>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements" target="_blank">Referência de elementos HTML</a></li><br/>
+            <li><a href="#Voltar">Volta para cima</a></li>
+        </ul>
+
+</body>
+</html>
